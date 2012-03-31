@@ -6,14 +6,15 @@ import java.util.logging.Logger;
 import org.noix.annotations.extensions.ExtensionsRunner;
 
 public class Main {
-	public static void main(String[] args) throws InstantiationException,
-			IllegalAccessException {
-		configureLogger();
-		ExtensionsRunner extensionsRunner = new ExtensionsRunner();
-		extensionsRunner.run();
-	}
+    public static void main(String[] args) throws InstantiationException,
+            IllegalAccessException {
+        configureLogger();
+        ExtensionsRunner extensionsRunner = new ExtensionsRunner();
+        extensionsRunner.run();
+        System.out.println("testing....");
+    }
 
-	private static void configureLogger() {
-		Logger.getLogger("").setLevel(Level.WARNING);
-	}
+    private static void configureLogger() {
+        Logger.getLogger("").setLevel(Level.WARNING);
+    }
 }
